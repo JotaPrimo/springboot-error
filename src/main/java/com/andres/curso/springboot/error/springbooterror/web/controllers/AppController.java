@@ -8,10 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class AppController {
 
     // conceito de manejar exceptions é para tornar execões mais amigavéis
-
     @GetMapping("/app")
     public String index() {
-        int error = 100 / 0;
+        // int error = 100 / 0;
+        int value = Integer.parseInt("10x");
+        System.out.println(value);
         return "OK 200";
     }
 
